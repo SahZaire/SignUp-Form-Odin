@@ -8,11 +8,53 @@
 </head>
 <body>
     
+    <div class="main">
 
+        <div class="no-content">
+            <div class="bg-logo">
+                <div class="logo">
+                </div>
+            </div>
+        </div>
 
+        <div class="content">
+            <div class="info">
+                <h1>This is not a real service! You Know you need something like this in your life to help you realize your deepest dreams.</h1>
+                <h1>You know you what to.</h1>
+            </div>
+            <div class="form-content">
+                <form action="https://httpbin.org/post" method="post">
+                    <h3>Let's Do This!</h3>
+                    <div class="form-details">
+                        <div class="col-1">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" name="password" id="password"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                            title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one digit">
+                        </div>
+                        <div class="col-2">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" name="phone" id="phone">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="text" name="confirm-password" id="confirm-password">
+                        </div>
+                    </div>
+                    <button type="submit" style="padding: .2rem; font-size: 20px; margin-top: 8px;">SUBMIT</button>
+                </form>
+            </div>
+            <div class="entry-points">
+                <button type="submit" style="font-size: 20px;">Create Account</button>
+                <p style="font-size: 20px;">Already have an account?  <a href="/login" style="font-size: 20px;">Log In</a></p>
+            </div>
+        </div>
 
-
-
+    </div>
 
     <source src="script.js">
 
